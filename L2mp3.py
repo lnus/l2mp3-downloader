@@ -15,7 +15,7 @@ class downloader():
 			os.mkdir("Audio")
 		
 		#Print introduction
-		print(Fore.LIGHTCYAN_EX + "Welcome L2mp3 donwloader!\n\n" +
+		print(Fore.LIGHTCYAN_EX + "Welcome to L2mp3 downloader!\n\n" +
 				"To download only audio put '--a' after your URL.\n" +
 				"To download only video put '--v' after your URL.\n" +
 				"To download both, don't put any arguments.\n\n" +
@@ -73,10 +73,9 @@ class downloader():
 		self.startSearch()
 
 	def startSearch(self):
-		print("\n")
 		#Prompts the user to enter an url
 		try:
-			dlUrl = input(Fore.LIGHTYELLOW_EX + "[L2mp3] URL> " + Fore.LIGHTBLACK_EX)
+			dlUrl = input(Fore.LIGHTYELLOW_EX + "\n[L2mp3] URL> " + Fore.LIGHTBLACK_EX)
 			if "--a" in dlUrl: 
 				self.audioOnly = True
 				dlUrl = dlUrl.replace("--a", "", 1)
