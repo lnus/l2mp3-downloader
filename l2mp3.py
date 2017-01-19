@@ -3,8 +3,6 @@ from colorama import Fore
 from pytube import YouTube
 import moviepy.editor as mp
 
-DEBUG = True
-
 class Downloader():
     def __init__(self):
         # Makes the dirs
