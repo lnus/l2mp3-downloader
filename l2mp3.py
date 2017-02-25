@@ -1,12 +1,11 @@
 import os, time
-from colorama import Fore
 from pytube import YouTube
 
 class Downloader():
     def __init__(self):
         # Makes the dirs
         if not os.path.exists("Video"):
-            os.system("Video")
+            os.system("mkdir Video")
         if not os.path.exists("Audio"):
             os.system("mkdir Audio")
 
